@@ -1,0 +1,16 @@
+I would like to create a language learning application making use of chatgpt behind the scenes. 
+
+At the most simple level, this application should do a couple of main functions:
+1. It should provide the user a block of text in a language other than the users native language
+2. It should allow a user to select (or type) the words which he does not know (or would like to improve on)
+3. It should store this list of words into a database
+
+Once the "unknown" words are in the database then the chatGPT should help do the following:
+1. Determine a "theme" common amongst the unknown words (i.e. all verbs in the past-tense or all adjectives about food) and alter the user of that theme
+2. Provide detailed explanations of each of the unknown words -- as well as some more details about related concepts. For example if an english user is learning spanish, and doesn't know the word ("canto" and also consistently doesn't understand past tense we should not only explain the tenses of cantar in present, but also past tense as well)
+3. Provide a new exemple paragraph or series of paragraphs that incorporates new versions of the unkown words (in the cases of verbs) or uses them in different ways to see if the user can now understand them
+
+Then once all the words from a particular prompt are understood, then we should provide a new prompt that is roughly equal in difficulty to the first prompt, but with a set of words and concepts that will progress the users knowledge. 
+
+
+Can you format this idea for into a series of prompts for a ChatGPT program to write a series of scripts (or functions) in a python program where the input would be telling chatGPT a specific task it needs to complete and the output would be a script or function that can be used be a future script to put everything together 
