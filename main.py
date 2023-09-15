@@ -41,3 +41,5 @@ print(f"New example paragraph:\n{new_example}")
 # Generate a new text block for the next learning cycle
 new_text_block = generate_progression_text_block(difficult_words_list, themes, "beginner")
 print(f"New text block for progression:\n{new_text_block}")
+
+# Repeat the process for the next learning cycle
