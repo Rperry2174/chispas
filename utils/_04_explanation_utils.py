@@ -1,7 +1,6 @@
-import os
 import openai
-API_KEY=os.environ.get("OPENAI_API_KEY")
-openai.api_key = API_KEY
+from utils.initialize_open_ai import initialize_openai
+initialize_openai()
 
 def generate_detailed_explanations(unknown_words, themes):
     # Create a prompt for ChatGPT that asks for explanations and examples for each unknown word

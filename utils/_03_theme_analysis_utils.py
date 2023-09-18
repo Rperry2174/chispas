@@ -1,8 +1,6 @@
 import openai
-import os
-API_KEY=os.environ.get("OPENAI_API_KEY")
-
-openai.api_key = API_KEY
+from utils.initialize_open_ai import initialize_openai
+initialize_openai()
 
 def analyze_themes_with_chatgpt(unknown_words):
     # Convert the list of unknown words into a string, separated by commas

@@ -1,8 +1,7 @@
-import os
 import openai
-API_KEY=os.environ.get("OPENAI_API_KEY")
+from utils.initialize_open_ai import initialize_openai
 
-openai.api_key = API_KEY
+initialize_openai()
 
 def generate_new_examples(unknown_words, themes):
     # Create a prompt for ChatGPT to generate new example sentences or paragraphs

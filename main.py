@@ -1,9 +1,7 @@
 import openai
 import os
-API_KEY=os.environ.get("OPENAI_API_KEY")
 
-openai.api_key = API_KEY
-
+from utils.initialize_open_ai import initialize_openai
 from utils._00_database_utils import initialize_database, store_unknown_words
 from utils._01_text_utils import display_random_text_block, display_entire_text
 from utils._02_word_selection_utils import get_difficult_words
@@ -11,6 +9,7 @@ from utils._03_theme_analysis_utils import analyze_themes_with_chatgpt
 from utils._04_explanation_utils import generate_detailed_explanations
 from utils._05_example_generation_utils import generate_new_examples, generate_progression_text_block
 
+initialize_openai()
 initialize_database()
 
 # To display entire block of text to the user
